@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+#include <iostream>
+#include<string>
+#include<cmath>
+#include<vector>
+#include<iomanip>
+using namespace std;
+void solve(string s,int n){
+    int count = 1;
+    for(int i= 1;i<n;i++){
+        if(s[i]=='0'){
+            count ++;
+        }else break;
+    }
+    cout << count << endl ;
+}
+int main(){
+    int t;
+    cin >> t;
+    while(t--){
+        int n;
+        string s;
+        cin >> n >> s;
+        solve(s,n);
+    }
+}
